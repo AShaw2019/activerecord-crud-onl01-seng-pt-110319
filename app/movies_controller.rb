@@ -18,7 +18,7 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block(arg)
-  Movie.create do |m|
+  movie=Movie.create do |m|
     m.title = arg[:title]
     m.release_date = arg[:release_date]
   end
